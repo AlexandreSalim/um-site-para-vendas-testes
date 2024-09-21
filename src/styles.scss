@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.header {
+    background-color: rgba(197, 197, 197, 0.314);
+   
+    nav{display: flex; align-items: center; justify-content: space-between;}
+    mat-icon{cursor: pointer;}
+}
+
+
+footer{
+    background-color: rgba(197, 197, 197, 0.314);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a{text-decoration: none; color: black;}
+a:hover{color: blue;}

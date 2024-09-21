@@ -1,0 +1,20 @@
+.primeiro{
+display: flex; 
+gap: 30px;
+align-items: center;
+justify-content: center;
+height: 100%;
+}
+
+.segundo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 20px;
+    background-color: rgba(208, 208, 208, 0.89);
+    padding: 10px;
+    min-height: 200px;
+    min-width: 180px;
+    border-radius: 5px;
+}

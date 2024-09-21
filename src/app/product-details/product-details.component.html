@@ -1,0 +1,339 @@
+<!-- <h1>Detalhes do Produto</h1>
+  <p>Categoria: {{ category }}</p>
+  <p>Produto: {{ productName }}</p> -->
+
+<!-- Aqui você pode adicionar lógica para carregar a descrição e imagem correspondente ao produto -->
+<div *ngIf="productName === '3-pipas-por-10'" class="primeiro">
+
+
+  <div class="segundo">
+    <h1>Pipas:</h1>
+
+    <a [routerLink]="['/product', 'pipa', '3-pipas-por-10']">3 Pipas por R$10</a>
+    <a [routerLink]="['/product', 'linha', '1-deizao-de-linha-por-12']">1 deizão de Linha por R$12</a>
+  </div>
+
+  <div>
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+
+    <p>3 Pipas por apenas R$10! Aproveite a promoção!</p>
+    <img src="assets/img/pipa.webp" alt="Pipa" width="200px">
+  </div>
+
+</div>
+
+<div *ngIf="productName === '1-deizao-de-linha-por-12'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Pipas:</h1>
+
+    <a [routerLink]="['/product', 'pipa', '3-pipas-por-10']">3 Pipas por R$10</a>
+    <a [routerLink]="['/product', 'linha', '1-deizao-de-linha-por-12']">1 deizão de Linha por R$12</a>
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>1 deizão de Linha por apenas R$12! Qualidade garantida.</p>
+    <img src="assets/img/linha.webp" alt="Linha" width="200px">
+
+  </div>
+</div>
+
+<!-- produtos de roupas -->
+<div *ngIf="productName === 'Moletom'" class="primeiro">
+  <div class="segundo">
+    <h1>Calças:</h1>
+
+    <a [routerLink]="['/product-calca', 'Roupa', 'Moletom']">Moletom</a>
+    <a [routerLink]="['/product-calca', 'Roupa', 'jeans']">jeans</a>
+    <a [routerLink]="['/product-calca', 'Roupa', 'jogger']">jogger</a>
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Calça moletom de qualidade por apenas R$50.</p>
+    <img src="assets/img/moletom.png" alt="Moletom" width="200px">
+
+  </div>
+</div>
+
+<div *ngIf="productName === 'jeans'" class="primeiro">
+  <div class="segundo">
+    <h1>Calças:</h1>
+
+    <a [routerLink]="['/product-calca', 'Roupa', 'Moletom']">Moletom</a>
+    <a [routerLink]="['/product-calca', 'Roupa', 'jeans']">jeans</a>
+    <a [routerLink]="['/product-calca', 'Roupa', 'jogger']">jogger</a>
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Calça Dins de qualidade por apenas R$80.</p>
+    <img src="assets/img/dins.jpeg" alt="Dins" width="200px">
+  </div>
+
+</div>
+
+<div *ngIf="productName === 'jogger'" class="primeiro">
+  <div class="segundo">
+    <h1>Calças:</h1>
+
+    <a [routerLink]="['/product-calca', 'Roupa', 'Moletom']">Moletom</a>
+    <a [routerLink]="['/product-calca', 'Roupa', 'jeans']">jeans</a>
+    <a [routerLink]="['/product-calca', 'Roupa', 'jogger']">jogger</a>
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Calça jogger de qualidade por apenas R$100.</p>
+    <img src="assets/img/jogger.webp" alt="jogger" width="200px">
+  </div>
+
+</div>
+
+<!-- produtos de celulares e radios -->
+<div *ngIf="productName === 'radio1'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio1']">Dos anos 80</a>
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio2']">Anos 2000</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'radio3']">Uns dos mais atuais</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Iphone']">Iphone</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Samsung']">Samsung</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Xiaomi']">Xiaomi</a>
+
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>radio da segunda guerra mundial por R$20</p>
+    <img src="assets/img/radio1.webp" alt="radio" width="200px">
+  </div>
+
+</div>
+
+<div *ngIf="productName === 'radio2'" class="primeiro">
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio1']">Dos anos 80</a>
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio2']">Anos 2000</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'radio3']">Uns dos mais atuais</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Iphone']">Iphone</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Samsung']">Samsung</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Xiaomi']">Xiaomi</a>
+
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>radio do meu pai, anos 80 por R$30</p>
+    <img src="assets/img/radio2.jpg" alt="radio" width="200px">
+  </div>
+</div>
+
+<div *ngIf="productName === 'radio3'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio1']">Dos anos 80</a>
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio2']">Anos 2000</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'radio3']">Uns dos mais atuais</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Iphone']">Iphone</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Samsung']">Samsung</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Xiaomi']">Xiaomi</a>
+
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>radio do minha mae, anos 90 por R$30</p>
+    <img src="assets/img/radio3.webp" alt="radio" width="200px">
+
+  </div>
+
+</div>
+
+<div *ngIf="productName === 'Iphone'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio1']">Dos anos 80</a>
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio2']">Anos 2000</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'radio3']">Uns dos mais atuais</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Iphone']">Iphone</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Samsung']">Samsung</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Xiaomi']">Xiaomi</a>
+
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Iphone R$3.000</p>
+    <img src="assets/img/iphone.webp" alt="radio" width="200px">
+  
+  </div>
+
+</div>
+
+<div *ngIf="productName === 'Samsung'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio1']">Dos anos 80</a>
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio2']">Anos 2000</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'radio3']">Uns dos mais atuais</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Iphone']">Iphone</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Samsung']">Samsung</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Xiaomi']">Xiaomi</a>
+
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Samsung R$1.500</p>
+    <img src="assets/img/samsung.webp" alt="radio" width="200px">
+    
+  </div>
+
+</div>
+
+<div *ngIf="productName === 'Xiaomi'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio1']">Dos anos 80</a>
+    <a [routerLink]="['/product-radio', 'tecnologia', 'radio2']">Anos 2000</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'radio3']">Uns dos mais atuais</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Iphone']">Iphone</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Samsung']">Samsung</a>
+    <a [routerLink]="['/product-radio', 'tecnoligia', 'Xiaomi']">Xiaomi</a>
+
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Xiaomi R$2.000</p>
+    <img src="assets/img/xiaomi.webp" alt="radio" width="200px">
+      
+  </div>
+
+
+</div>
+
+<!-- tenis -->
+<div *ngIf="productName === 'Nike'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-tenis', 'tenis', 'Nike']">Nike</a>
+    <a [routerLink]="['/product-tenis', 'tenis', 'Adidas']">Adidas</a>
+    <a [routerLink]="['/product-tenis', 'tenis', 'Puma']">Puma</a>
+
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Tênis Nike R$200</p>
+    <img src="assets/img/tenis1.jpg" alt="tenis Nike" width="200px">
+        
+  </div>
+
+</div>
+
+<div *ngIf="productName === 'Adidas'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-tenis', 'tenis', 'Nike']">Nike</a>
+    <a [routerLink]="['/product-tenis', 'tenis', 'Adidas']">Adidas</a>
+    <a [routerLink]="['/product-tenis', 'tenis', 'Puma']">Puma</a>
+    
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Tênis Adidas R$200</p>
+    <img src="assets/img/tenis2.webp" alt="Tênis Adidas" width="200px">
+          
+  </div>
+
+</div>
+
+<div *ngIf="productName === 'Puma'" class="primeiro">
+
+  <div class="segundo">
+    <h1>Radio:</h1>
+
+    <a [routerLink]="['/product-tenis', 'tenis', 'Nike']">Nike</a>
+    <a [routerLink]="['/product-tenis', 'tenis', 'Adidas']">Adidas</a>
+    <a [routerLink]="['/product-tenis', 'tenis', 'Puma']">Puma</a>
+    
+  </div>
+
+  <div>
+
+    <h1>Detalhes do Produto</h1>
+    <p>Categoria: {{ category }}</p>
+    <p>Produto: {{ productName }}</p>
+    <p>Tênis Puma R$200</p>
+    <img src="assets/img/puma.webp" alt="Tênis Puma" width="100px">
+            
+  </div>
+
+</div>

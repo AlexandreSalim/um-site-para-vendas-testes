@@ -1,0 +1,41 @@
+
+/* Estilizando o container do link */
+.link-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Estilizando os links principais */
+  .main-link {
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+
+  /* Dropdown container */
+  .dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilizando os sub-links */
+  .sub-link {
+    display: block;
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .sub-link:hover {
+    background-color: #f2f2f2;
+  }
+  
